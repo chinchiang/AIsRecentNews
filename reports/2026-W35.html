@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>全球 AI 模型與產業動態觀測 2026-W35</title>
+<style>
+:root{
+  --bg:#f5f6f8; --card:#ffffff; --ink:#1a2332; --muted:#5b6472;
+  --line:#d8dce3; --accent:#0f4c81; --accent-weak:#e8eff6;
+  --warn:#8a5a00; --warn-bg:#fdf3e0;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;line-height:1.75;font-size:15px}
+.wrap{max-width:960px;margin:0 auto;padding:2.5rem 1.25rem}
+header{border-bottom:3px solid var(--accent);padding-bottom:1rem;margin-bottom:1.5rem}
+header h1{font-size:1.45rem;letter-spacing:.05em}
+header .meta{color:var(--muted);font-size:.88rem;margin-top:.5rem}
+section{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:1.25rem 1.5rem;margin-bottom:1.1rem}
+h2{font-size:1.08rem;color:var(--accent);margin-bottom:.7rem;border-left:4px solid var(--accent);padding-left:.6rem}
+h3{font-size:.98rem;margin:.9rem 0 .4rem}
+p{margin-bottom:.6rem}
+.tablebox{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.88rem;min-width:640px}
+th,td{border:1px solid var(--line);padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{background:var(--accent-weak);white-space:nowrap}
+.tag{display:inline-block;background:var(--accent-weak);color:var(--accent);border-radius:3px;padding:0 .4rem;font-size:.8rem;white-space:nowrap}
+.unverified{background:var(--warn-bg);color:var(--warn)}
+ul{padding-left:1.3rem;margin-bottom:.6rem}
+li{margin-bottom:.35rem}
+.src{font-size:.85rem;word-break:break-all}
+.note{color:var(--muted);font-size:.85rem}
+footer{color:var(--muted);font-size:.8rem;margin-top:1.5rem}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>全球 AI 模型與產業動態觀測 週報 2026-W35</h1>
+  <div class="meta">
+    觀測期間：2026-08-17 08:00 → 2026-08-24 07:59（Asia/Taipei）｜期數代號：2026-W35｜實際執行時點：2026-08-24 22:17（Asia/Taipei，週一）<br>
+    本期為基線建立版：上期快照（latest-snapshot.yaml）不存在，無 Delta 比對，本期同時建立追蹤標的 registry。
+  </div>
+</header>
+
+<section>
+<h2>1. 管理階層摘要</h2>
+<p>本期為基線建立版，無 Delta 比對。觀測期間四軌動態集中於商業與供應條件：OpenAI 於 8 月 21 日調降旗艦模型 GPT-5.6 Sol 開發者定價逾兩成，輸入每百萬 token 降至 4 美元、輸出降至 20 美元，屬約三個月之促銷，反映 8 月中上旬 Gemini 3.7 Flash 與 Grok 4.6 發布後的價格競爭。資安面，Gambit Security 揭露三起攻擊者以商用 AI 編程工具支撐入侵流程之實案，其中一起憑證竊取行動累計取得 2,975 組驗證金鑰，防守方應提高憑證管理與暴露面盤點之優先級。供應條件面，媒體報導 Anthropic 擬允許企業客戶以自有雲基礎設施存放 30 天留存資料（尚未證實），OpenAI 則向選定客戶預覽零留存之 Private Safety Processing；Anthropic 企業治理相關 API 於 8 月 19 日轉正式版。監理面本期無主管機關新公告，EU AI Act 對 GPAI 之執法權已於 8 月 2 日生效，屬既成背景。本期無 P0 事項。</p>
+</section>
+
+<section>
+<h2>2. 本期 Delta 對照表</h2>
+<p class="note">本期為基線建立版，「上期狀態」一律為「—（基線）」；下表僅列本期有實質動態或屬重要既成背景之標的。</p>
+<div class="tablebox">
+<table>
+<tr><th>軌別</th><th>標的 id</th><th>項目</th><th>上期狀態 → 本期狀態</th><th>證據等級</th><th>優先級</th></tr>
+<tr><td>A</td><td>openai-models</td><td>GPT-5.6 Sol API 定價</td><td>—（基線）→ 輸入 4 美元／輸出 20 美元（每百萬 token），2026-08-21 起促銷約三個月</td><td>第三方評論</td><td>P1</td></tr>
+<tr><td>A</td><td>anthropic-models</td><td>現役模型與退役</td><td>—（基線）→ Fable 5／Opus 5／Sonnet 5／Haiku 4.5 現役；Opus 4.1 已於 2026-08-05 退役；本期無新公告</td><td>廠商主張（單一來源：官方文件）</td><td>P2</td></tr>
+<tr><td>A</td><td>google-deepmind-models</td><td>Gemini 3.7 Flash</td><td>—（基線）→ 2026-08-13 發布（窗前背景），促銷價輸入 0.75 美元／百萬 token 至 2026-12-31</td><td>廠商主張</td><td>P2</td></tr>
+<tr><td>A</td><td>xai-models</td><td>Grok 4.6</td><td>—（基線）→ 2026 年 8 月中旬上線 API（窗前背景），本期無新條目</td><td>廠商主張（單一來源）</td><td>P3</td></tr>
+<tr><td>B</td><td>ai-attack-incidents</td><td>攻擊者使用 AI 之實案</td><td>—（基線）→ Gambit Security 於 2026-08-18 揭露三起案例（勒索軟體、憑證竊取、挖礦框架）</td><td>第三方評論</td><td>P1</td></tr>
+<tr><td>C</td><td>anthropic-data-retention</td><td>資料留存政策</td><td>—（基線）→ 據報擬允許企業以自有雲存放 30 天留存資料，預計今年稍晚推出</td><td>尚未證實</td><td>P2</td></tr>
+<tr><td>C</td><td>openai-private-safety-processing</td><td>零留存濫用監測</td><td>—（基線）→ 2026-08-19 報導向選定企業客戶預覽中</td><td>第三方評論</td><td>P3</td></tr>
+<tr><td>C</td><td>anthropic-enterprise-platform</td><td>企業治理功能</td><td>—（基線）→ 2026-08-19 Admin API 使用者管理、computer use、Files API、Agent Skills API 轉正式版</td><td>廠商主張（單一來源：官方 release notes）</td><td>P2</td></tr>
+<tr><td>D</td><td>eu-ai-act-gpai</td><td>GPAI 執法</td><td>—（基線）→ 執法權 2026-08-02 生效、執行程序規則 2026-08-10 生效（窗前背景）；本期無新公告</td><td>已證實</td><td>P2</td></tr>
+<tr><td>D</td><td>us-frontier-testing-framework</td><td>自願性前沿模型測試</td><td>—（基線）→ 據報 2026-08-03 敲定，評估準則未公開</td><td>第三方評論</td><td>P3</td></tr>
+</table>
+</div>
+</section>
+
+<section>
+<h2>3. 模型能力雷達（能力／定價／可用性變動）</h2>
+<div class="tablebox">
+<table>
+<tr><th>廠商／模型</th><th>變動類型</th><th>本期狀態</th><th>證據等級</th></tr>
+<tr><td>OpenAI GPT-5.6 Sol</td><td>定價</td><td>2026-08-21 起輸入 5 → 4 美元、輸出 30 → 20 美元（每百萬 token），為期約三個月之促銷；消費者訂閱價不變</td><td>第三方評論</td></tr>
+<tr><td>OpenAI GPT-5.6 Cyber</td><td>可用性（背景）</td><td>2026-08-10 發布之資安特化模型；2026-08-11 起衍生型號 Daybreak Red／Blue 於 Amazon Bedrock 向符合資格客戶開放</td><td>第三方評論</td></tr>
+<tr><td>Anthropic Claude 系列</td><td>可用性</td><td>本期無變更。現役：Fable 5（10／50 美元、1M 上下文）、Opus 5（5／25 美元）、Sonnet 5（2／10 美元）、Haiku 4.5；Opus 4.1 已於 2026-08-05 退役，Mythos Preview 標記棄用</td><td>廠商主張（單一來源）</td></tr>
+<tr><td>Google Gemini 3.7 Flash</td><td>能力／定價（背景）</td><td>2026-08-13 發布，上下文約 1,048,576 tokens；促銷價輸入 0.75 美元／百萬 token 至 2026-12-31；廠商引述 DeepSWE v1.1 65.3%</td><td>廠商主張</td></tr>
+<tr><td>xAI Grok 4.6</td><td>能力／定價（背景）</td><td>8 月中旬上線 API：500k 上下文、影像輸入；200k tokens 以下 2／0.5／6 美元（輸入／快取輸入／輸出）；本期無新條目</td><td>廠商主張（單一來源）</td></tr>
+<tr><td>AWS Bedrock 區域支援</td><td>可用性</td><td>Claude Opus 5 in-region：us-east-1、eu-north-1、ap-southeast-4 並含 GovCloud；Fable 5 與 Mythos 5 in-region 僅 us-east-1；Sonnet 4 標示 Legacy，EOL 2026-10-14。文件未標示更新日，無法確認何項屬本期變更</td><td>廠商主張（單一來源）</td></tr>
+<tr><td>Meta／Mistral</td><td>—</td><td>本期無模型公告（Meta 部落格最新 2026-07-27；Mistral 最新 2026-08-11，非模型類）</td><td>已證實（官方頁面查核）</td></tr>
+</table>
+</div>
+</section>
+
+<section>
+<h2>4. 資安能力專章（B 軌）</h2>
+<h3>攻擊者實際使用 AI 之事件揭露</h3>
+<p>Gambit Security 於 2026-08-18 發布之報告（經 Help Net Security 具編輯審查轉述）記錄三起實案：其一，勒索軟體操作者以 Claude Code 入侵六個組織，用 AI 生成偵察指令與惡意腳本，並辨識最具價值之業務系統；其二，代號 Zerofot 之憑證竊取行動以 OpenAI Codex 與 Claude Code 打造自動掃描工具，於 4 至 5 月間竊得 2,975 組驗證金鑰；其三，代號 RAGE 之挖礦框架整合 DeepSeek 作為協調器管理殭屍網路，鎖定 Redis、Elasticsearch、Docker 等服務。證據等級：第三方評論。</p>
+<p><span class="tag">對防守方影響</span> 須假設攻擊者已用 AI 自動辨識高價值資料並加速入侵流程；資料分級、憑證輪替與暴露面盤點之優先級應提高。<br>
+<span class="tag">對攻擊方影響</span> 現成商用 AI 編程工具已可直接支撐入侵全流程，技術門檻與行動時間同步下降。</p>
+<h3>防禦側動態</h3>
+<p>CrowdStrike 於 2026-08-17 發表以 AI 推理進行偵測告警分級（detection triage）之技術文章，並於 2026-08-19 發表討論 AI 安全基準測試被當成優化目標時失真之「benchmaxxing」議題（均為廠商部落格，Tier 3）。對防守方：SOC 分級自動化可望減輕告警疲勞，但選型不應僅看基準分數；對攻擊方：AI 防禦若針對基準過度優化，基準外盲區即為可利用之繞過空間。</p>
+<h3>官方一手來源本期狀態</h3>
+<p>Anthropic Frontier Red Team（最新 2026-08-13 多代理系統研究）、Google Project Zero（最新 2026-05-13）、OpenAI 資安頁（抓取受阻，檢索亦無窗內新公告）、CISA（窗內有 Medusa 勒索軟體公告更新與 4 項 KEV 新增，但無 AI 專項公告）均於本期無 AI 資安新發布。窗前背景：Unit 42 於 2026-08-04 揭露其自動化系統兩個月內於 3,915 個開源專案發現 14,090 個已驗證漏洞（99.4% 為未曾通報），顯示自主化漏洞挖掘已可量產，開源修補量能面臨結構性壓力。</p>
+</section>
+
+<section>
+<h2>5. 行動看板</h2>
+<ul>
+<li><strong>P0 立即</strong>：本期無。</li>
+<li><strong>P1 本月</strong>：
+（1）檢視憑證管理與金鑰暴露面：Zerofot 案例顯示外洩之驗證金鑰為 AI 自動化攻擊之直接標的，應清查程式庫與 CI 環境中之金鑰並強化輪替。
+（2）若有 OpenAI API 用量，評估 GPT-5.6 Sol 降價對採購與模型組合之影響，並確認促銷期滿後之價格回復條款。</li>
+<li><strong>P2 本季</strong>：
+（1）追蹤 Anthropic 資料留存政策調整之官方定案，納入資料治理與供應商評估。
+（2）確認自身是否落入 EU AI Act GPAI 相關義務範圍（能力門檻 10^25 FLOP 之系統性風險推定），盤點供應商之合規文件。
+（3）依 Bedrock 區域支援現況檢視多區域部署與 Sonnet 4 EOL（2026-10-14）之遷移計畫。
+（4）建立次期 Delta 比對基準（本期已寫入 latest-snapshot.yaml）。</li>
+<li><strong>P3 觀察</strong>：OpenAI Private Safety Processing 之正式可用性與條款；美國白宮自願性前沿模型測試框架之準則揭露；NIST AITE 首輪評估結果；xAI Grok 4.6 之第三方評測。</li>
+</ul>
+</section>
+
+<section>
+<h2>6. 風險與反面觀點</h2>
+<ul>
+<li><strong>PR 動機</strong>：OpenAI 降價為限期促銷而非結構性降價，時點緊接 Gemini 3.7 Flash 半價策略與競品發布，屬競爭回應；促銷期滿後之實際成本應以屆時價目表為準，不宜以促銷價做長期採購測算。</li>
+<li><strong>商業誘因</strong>：Gambit Security 為資安廠商，揭露攻擊者使用 AI 之報告同時服務其產品行銷；案例真實性尚無主管機關或被害組織之獨立確認。CrowdStrike 之 Agentic SOC 系列同屬產品線鋪陳。</li>
+<li><strong>benchmark 可比性</strong>：Gemini 3.7 Flash 之 DeepSWE 分數為廠商自評，無第三方復現；「benchmaxxing」議題本身即說明基準分數可被針對性優化，跨廠商分數不具直接可比性。</li>
+<li><strong>獨立驗證缺口</strong>：Anthropic 資料留存政策調整僅有引述匿名消息人士之媒體報導，官方未公告，存在以放話測試市場反應之可能；白宮自願性測試框架不公開評估準則與門檻，外界無從驗證其實質約束力；OpenAI 與 CISA 官網對自動抓取回應 403，本期多則事實僅能以轉述來源確認，證據等級因此受限。</li>
+</ul>
+</section>
+
+<section>
+<h2>7. 檢索覆蓋與方法註記</h2>
+<p>本期為首期，registry 由本期建立，全部標的 status 標為 new。四軌均完成規定之一手來源抓取與至少三次語意不同之檢索，無「該軌完全失敗」情事。個別來源不可及：openai.com 新聞與企業隱私頁、x.ai/news、CISA 公告頁、Bloomberg 原文均回應 403，依失敗處理規則改以檢索與具編輯審查之轉述來源替代，相關項目證據等級據此標註。Anthropic 文件網域 docs.claude.com 轉址至 platform.claude.com，以轉址後頁面為準。收錄排除：OpenAI 新模型家族之預告性命名因無技術細節不收錄；「執委會 8 月 17 日發布透明度指引」等與官方紀錄不符或僅見於互相矛盾之 Tier 3 來源者不收錄。</p>
+</section>
+
+<section>
+<h2>8. 來源附錄</h2>
+<h3>Tier 1（官方一手文件）</h3>
+<ul class="src">
+<li>Anthropic｜Models overview｜https://platform.claude.com/docs/en/about-claude/models/overview｜發布日未確認（持續更新之文件頁）</li>
+<li>Anthropic｜Model deprecations｜https://platform.claude.com/docs/en/about-claude/model-deprecations｜公告 2026-06-05、退役生效 2026-08-05</li>
+<li>Anthropic｜API release notes｜https://platform.claude.com/docs/en/release-notes/api｜條目 2026-08-18 至 2026-08-20</li>
+<li>Anthropic｜Commercial Terms of Service｜https://www.anthropic.com/legal/commercial-terms｜生效日 2025-06-17</li>
+<li>Anthropic Frontier Red Team｜Patterns and problems in emerging multiagent systems｜https://www.anthropic.com/research/team/frontier-red-team｜2026-08-13</li>
+<li>Google DeepMind｜Introducing Gemini 3.7 Flash｜https://deepmind.google/discover/blog/｜列表頁標示 2026 年 8 月（精確日 2026-08-13 由 Tier 2 佐證）</li>
+<li>xAI｜API Release Notes（Grok 4.6）｜https://docs.x.ai/developers/release-notes｜列表標示 2026 年 8 月</li>
+<li>AWS｜Model support by AWS Region in Amazon Bedrock｜https://docs.aws.amazon.com/bedrock/latest/userguide/models-regions.html｜更新日未標示</li>
+<li>Amazon｜OpenAI models on Amazon Bedrock（Daybreak）｜https://www.aboutamazon.com/news/aws/bedrock-openai-models｜2026-08-11</li>
+<li>European Commission｜Safer and more transparent AI｜https://commission.europa.eu/news-and-media/news/safer-and-more-transparent-ai-2026-08-02_en｜2026-08-02</li>
+<li>UK AI Security Institute｜Our work（評估事件揭露）｜https://aisi.gov.uk/work｜2026-08-04</li>
+<li>NIST｜Announcing NIST's Artificial Intelligence Technology Evaluation（AITE）｜https://www.nist.gov/news-events/news/2026/07/announcing-nists-artificial-intelligence-technology-evaluation-aite｜2026 年 7 月（頁面更新 2026-07-24）</li>
+<li>CISA｜Cybersecurity Advisories（官網抓取受阻，內容經第三方轉述確認）｜https://www.cisa.gov/news-events/cybersecurity-advisories｜2026-08-18</li>
+</ul>
+<h3>Tier 2（具編輯審查媒體）</h3>
+<ul class="src">
+<li>Reuters（via Investing.com）｜OpenAI cuts developer pricing for frontier GPT-5.6 Sol model by more than 20%｜https://www.investing.com/news/stock-market-news/openai-cuts-developer-pricing-for-frontier-gpt56-sol-model-by-more-than-20-4872186｜2026-08-21</li>
+<li>TechCrunch｜OpenAI seeks to one-up Anthropic with new customer privacy protections｜https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/｜2026-08-19</li>
+<li>TechCrunch｜As AI-led attacks multiply, OpenAI launches a new cyber model｜https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model/｜2026-08-10</li>
+<li>PYMNTS（轉述 Bloomberg 2026-08-20）｜Anthropic Plans to Tweak Data Retention Rules After Enterprise Concerns｜https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-plans-to-tweak-data-retention-rules-after-enterprise-concerns/｜2026-08-20</li>
+<li>Help Net Security｜Attackers turn to AI for help identifying files worth stealing｜https://www.helpnetsecurity.com/2026/08/18/gambit-security-ai-cyberattack-tools-report/｜2026-08-18</li>
+<li>Fortune｜白宮自願性前沿模型測試框架報導｜https://fortune.com/2026/08/04/baffling-white-house-wont-publicly-release-ai-model-evaluation-framework-it-reviewed-today-with-openai-anthropic-microsoft-and-others/｜2026-08-04</li>
+</ul>
+<h3>Tier 3（部落格／廠商內容／追蹤站）</h3>
+<ul class="src">
+<li>CrowdStrike｜Teaching AI to Reason Through Detection Triage｜https://www.crowdstrike.com/en-us/blog/（單篇連結未能直接驗證）｜2026-08-17</li>
+<li>CrowdStrike｜Benchmaxxing: When the Benchmark Becomes the Target｜單篇 URL 查無公開資料（於官方部落格列表確認）｜2026-08-19</li>
+<li>Palo Alto Networks Unit 42｜The Frontier AI Vulnerability Burst｜https://unit42.paloaltonetworks.com/frontier-ai-vulnerability-burst/｜2026-08-04</li>
+<li>AI Governance Institute｜White House Finalizes Voluntary Frontier AI Safety Testing With Top Labs｜https://aigovernance.com/news/white-house-finalizes-voluntary-frontier-ai-safety-testing-with-top-labs｜2026-08-18</li>
+<li>artificialintelligenceact.eu｜Enforcement of Chapter V under the EU AI Act｜https://artificialintelligenceact.eu/enforcement-of-chapter-v-under-the-eu-ai-act/｜追蹤站條目（Implementing Regulation 2026-07-20 通過、2026-08-10 生效）</li>
+</ul>
+</section>
+
+<footer>本報告為企業內部技術情報用途。所有內容均改寫自上列來源；證據等級標註依內部四級制（已證實／廠商主張／第三方評論／尚未證實）。<a href="../index.html">回期數清單</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+period_end: 2026-08-24
+week_id: 2026-W35
+targets:
+  - id: anthropic-models
+    track: A
+    state: "現役 Claude Fable 5 (claude-fable-5, $10/$50)、Opus 5 (claude-opus-5, $5/$25)、Sonnet 5 (claude-sonnet-5, $2/$10)、Haiku 4.5；Opus 4.1 已於 2026-08-05 退役；Mythos Preview 標記 deprecated"
+    evidence: 廠商主張
+    source_date: 2026-08-05
+    status: new
+    carried_over: false
+  - id: openai-models
+    track: A
+    state: "GPT-5.6 Sol API 定價 2026-08-21 起調降為輸入 $4/輸出 $20（每百萬 token），促銷約三個月；GPT-5.6 Cyber 於 2026-08-10 發布"
+    evidence: 第三方評論
+    source_date: 2026-08-21
+    status: new
+    carried_over: false
+  - id: google-deepmind-models
+    track: A
+    state: "Gemini 3.7 Flash 於 2026-08-13 發布，約 1,048,576 tokens 上下文，促銷價輸入 $0.75/百萬 token 至 2026-12-31"
+    evidence: 廠商主張
+    source_date: 2026-08-13
+    status: new
+    carried_over: false
+  - id: xai-models
+    track: A
+    state: "Grok 4.6 於 2026 年 8 月中旬上線 API：500k 上下文、影像輸入，200k tokens 以下 $2/$0.5/$6（輸入/快取輸入/輸出）"
+    evidence: 廠商主張
+    source_date: 2026-08-12
+    status: new
+    carried_over: false
+  - id: meta-models
+    track: A
+    state: "本期無模型公告（官方部落格最新 2026-07-27）"
+    evidence: 已證實
+    source_date: 2026-07-27
+    status: new
+    carried_over: false
+  - id: mistral-models
+    track: A
+    state: "本期無模型公告（官方新聞最新 2026-08-11，非模型類）"
+    evidence: 已證實
+    source_date: 2026-08-11
+    status: new
+    carried_over: false
+  - id: cloud-model-catalogs
+    track: A
+    state: "Bedrock：OpenAI Daybreak Red/Blue 2026-08-11 起向符合資格客戶開放；Claude Sonnet 4 標示 Legacy，EOL 2026-10-14；文件未標示更新日"
+    evidence: 廠商主張
+    source_date: 2026-08-11
+    status: new
+    carried_over: false
+  - id: ai-attack-incidents
+    track: B
+    state: "Gambit Security 2026-08-18 揭露三起攻擊者使用商用 AI 工具實案（勒索軟體入侵六組織、Zerofot 竊 2,975 組金鑰、RAGE 挖礦框架）"
+    evidence: 第三方評論
+    source_date: 2026-08-18
+    status: new
+    carried_over: false
+  - id: ai-vuln-discovery
+    track: B
+    state: "Unit 42 自動化系統於 3,915 個開源專案發現 14,090 個已驗證漏洞（2026-08-04）；Project Zero 最新文章 2026-05-13，本期無新成果"
+    evidence: 廠商主張
+    source_date: 2026-08-04
+    status: new
+    carried_over: false
+  - id: anthropic-frontier-red-team
+    track: B
+    state: "最新研究為 2026-08-13 多代理系統模式與問題；本期無新發布"
+    evidence: 廠商主張
+    source_date: 2026-08-13
+    status: new
+    carried_over: false
+  - id: cisa-ai-guidance
+    track: B
+    state: "本期無 AI 專項公告（agentic AI 指南為 2026-05-01）；窗內為 Medusa 公告更新與 4 項 KEV 新增"
+    evidence: 已證實
+    source_date: 2026-08-18
+    status: new
+    carried_over: false
+  - id: anthropic-commercial-terms
+    track: C
+    state: "現行版本生效日 2025-06-17，本期無變更；privacy.anthropic.com 已轉址至 privacy.claude.com"
+    evidence: 廠商主張
+    source_date: 2025-06-17
+    status: new
+    carried_over: false
+  - id: anthropic-data-retention
+    track: C
+    state: "據報擬允許企業客戶以自有雲基礎設施存放 30 天留存資料，預計今年稍晚推出；官方未公告"
+    evidence: 尚未證實
+    source_date: 2026-08-20
+    status: new
+    carried_over: false
+  - id: anthropic-enterprise-platform
+    track: C
+    state: "2026-08-19 Enterprise Admin API 使用者管理、computer use、Files API、Agent Skills API 轉 GA；2026-08-20 Python SDK v1.0"
+    evidence: 廠商主張
+    source_date: 2026-08-19
+    status: new
+    carried_over: false
+  - id: openai-private-safety-processing
+    track: C
+    state: "向選定企業客戶預覽中：代理式濫用監測並宣稱零資料留存；無正式 GA 日期"
+    evidence: 第三方評論
+    source_date: 2026-08-19
+    status: new
+    carried_over: false
+  - id: bedrock-region-availability
+    track: C
+    state: "Claude Opus 5 in-region us-east-1/eu-north-1/ap-southeast-4 含 GovCloud；Fable 5 與 Mythos 5 in-region 僅 us-east-1；文件未標示更新日"
+    evidence: 廠商主張
+    source_date: 2026-08-24
+    status: new
+    carried_over: false
+  - id: eu-ai-act-gpai
+    track: D
+    state: "GPAI 執法權 2026-08-02 生效（可要求模型評估、下架、罰款達全球營業額 3%）；執行程序規則 2026/1755 於 2026-08-10 生效；本期無新公告"
+    evidence: 已證實
+    source_date: 2026-08-10
+    status: new
+    carried_over: false
+  - id: us-frontier-testing-framework
+    track: D
+    state: "自願性前沿模型安全測試框架據報 2026-08-03 敲定；評估準則與門檻未公開，無法律拘束力"
+    evidence: 第三方評論
+    source_date: 2026-08-18
+    status: new
+    carried_over: false
+  - id: uk-aisi-evaluations
+    track: D
+    state: "2026-08-04 揭露能力評估期間 AI agent 未經授權行動之事件與補救措施；本期無新發布"
+    evidence: 已證實
+    source_date: 2026-08-04
+    status: new
+    carried_over: false
+  - id: nist-aite
+    track: D
+    state: "首輪封閉測試床評估於 2026 年 8 月啟動（具體起始日查無公開資料），首批三項任務涵蓋視覺語言模型應用"
+    evidence: 已證實
+    source_date: 2026-07-24
+    status: new
+    carried_over: false
