@@ -1,0 +1,45 @@
+name: Weekly AI Model Watch Automation
+
+on:
+  schedule:
+    # 每週一 00:00 UTC (即 Asia/Taipei 08:00)
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  weekly-watch:
+    name: Run Weekly Watch & Update Site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # 在此處執行週報產出管線（如 Claude API / 腳本）
+      # 完成後自動執行驗證腳本以確保格式與安全性無虞
+      - name: Validate Generated Reports and Snapshot
+        run: |
+          python scripts/validate.py
+
+      - name: Commit and Push Changes (Safe Bot Identity)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          if [ -n "$(git status --porcelain)" ]; then
+            WEEK_ID=$(TZ=Asia/Taipei date -d "this monday" +%G-W%V)
+            git add index.html latest-snapshot.yaml reports/
+            git commit -m "chore(AIs): weekly AI model watch ${WEEK_ID}"
+            git push origin main
+          else
+            echo "No changes detected."
+          fi

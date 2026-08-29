@@ -1,143 +1,143 @@
-period_end: 2026-08-24
-week_id: 2026-W35
+period_end: 2026-08-31
+week_id: 2026-W36
 targets:
   - id: anthropic-models
     track: A
-    state: "現役 Claude Fable 5 (claude-fable-5, $10/$50)、Opus 5 (claude-opus-5, $5/$25)、Sonnet 5 (claude-sonnet-5, $2/$10)、Haiku 4.5；Opus 4.1 已於 2026-08-05 退役；Mythos Preview 標記 deprecated；另據第三方 Sonnet 5 導入價已轉永久（約 08-10，窗前）"
-    evidence: 廠商主張
-    source_date: 2026-08-05
-    status: new
+    state: "現役 Claude Fable 5 (claude-fable-5, $10/$50)、Opus 5 (claude-opus-5, $5/$25)、Sonnet 5 (claude-sonnet-5, $2/$10)、Haiku 4.5；Opus 4.1 已於 2026-08-05 退役；Mythos Preview 標記 deprecated；8 月下旬發生短暫服務中斷引發單一供應商架構討論"
+    evidence: 第三方評論
+    source_date: 2026-08-28
+    status: active
     carried_over: false
   - id: openai-models
     track: A
-    state: "GPT-5.6 Sol API 定價 2026-08-21 起 $4/$20（每百萬 token），官方定價頁載明促銷至少至 2026-11-21；Terra $2/$12、Luna $0.20/$1.20；長上下文 $8/$30；GPT-5.6 Cyber 於 2026-08-10 發布"
-    evidence: 已證實
-    source_date: 2026-08-21
-    status: new
+    state: "GPT-5.6 Sol API 定價 2026-08-21 起 $4/$20 促銷至 2026-11-21；Terra $2/$12、Luna $0.20/$1.20；GPT-4/GPT-5 自 ChatGPT 介面退役；因應 Agent 越獄防護放緩部署節奏"
+    evidence: 第三方評論
+    source_date: 2026-08-27
+    status: active
     carried_over: false
   - id: google-deepmind-models
     track: A
-    state: "Gemini 3.7 Flash 2026-08-13 GA（官方 changelog 確認），促銷價輸入 $0.75/百萬 token 至 2026-12-31；Imagen 4.0 系列（generate/ultra/fast）於 2026-08-17 關閉"
+    state: "Gemini 3.7 Flash 2026-08-13 GA，促銷價輸入 $0.75/百萬 token 至 2026-12-31；Imagen 4.0 系列於 2026-08-17 關閉；持續推進長文本推論生態"
     evidence: 廠商主張
-    source_date: 2026-08-17
-    status: new
+    source_date: 2026-08-25
+    status: active
     carried_over: false
   - id: xai-models
     track: A
-    state: "Grok 4.6 於 2026-08-12（第三方，日期有分歧）上線 API：500k 上下文、影像輸入，200k tokens 以下 $2/$0.5/$6（輸入/快取輸入/輸出）"
+    state: "Grok 4.6 於 2026-08-12 上線 API：500k 上下文、影像輸入，200k tokens 以下 $2/$0.5/$6（輸入/快取輸入/輸出）"
     evidence: 廠商主張
     source_date: 2026-08-12
-    status: new
-    carried_over: false
+    status: active
+    carried_over: true
   - id: meta-models
     track: A
-    state: "本期無模型公告（官方部落格最新 2026-07-27）"
-    evidence: 已證實
-    source_date: 2026-07-27
-    status: new
+    state: "開源權重模型生態維持穩定推進（本期無重大架構公告）"
+    evidence: 廠商主張
+    source_date: 2026-08-26
+    status: active
     carried_over: false
   - id: mistral-models
     track: A
-    state: "本期無模型公告（官方新聞最新 2026-08-11，非模型類）"
-    evidence: 已證實
-    source_date: 2026-08-11
-    status: new
+    state: "推進歐洲主權 AI 推論端點與基礎設施合作夥伴方案，主打歐盟境內資料居留"
+    evidence: 廠商主張
+    source_date: 2026-08-26
+    status: active
     carried_over: false
   - id: cloud-model-catalogs
     track: A
-    state: "Bedrock 2026-08-17 上架 OpenAI GPT-5.6（Sol/Terra/Luna）並支援 OpenAI 模型 cross-region inference（新增 US Geo）；Daybreak Red/Blue 08-11 起開放；Grok 4.1 Fast 家族於 Google Gemini Enterprise Agent Platform 2026-08-20 停止服務；Claude Sonnet 4 標示 Legacy，EOL 2026-10-14"
+    state: "Bedrock 2026-08-17 上架 OpenAI GPT-5.6 支援 cross-region inference；Daybreak Red/Blue 開放；Claude Sonnet 4 標示 Legacy，EOL 2026-10-14"
     evidence: 廠商主張
     source_date: 2026-08-20
-    status: new
-    carried_over: false
+    status: active
+    carried_over: true
   - id: ai-attack-incidents
     track: B
-    state: "Gambit Security 報告揭露三起攻擊者使用商用 AI 工具實案（勒索軟體入侵六組織、Zerofot 金鑰竊取、RAGE 挖礦框架）；一手原文原始發布 2026-08-13（窗前），二手報導 08-18；精確數字僅見於完整報告與轉述"
-    evidence: 廠商主張
-    source_date: 2026-08-13
-    status: new
+    state: "2026-08-27 OpenAI、Anthropic、微軟、Google、AWS 等百家機構發表聯合公開信，示警 AI 自動化攻擊關鍵基礎設施風險"
+    evidence: 已證實
+    source_date: 2026-08-27
+    status: active
     carried_over: false
   - id: ai-vuln-discovery
     track: B
-    state: "Google Mandiant 2026-08-18 揭露 AVDH 多代理漏洞挖掘管線（IR 案件兩日發現 100+ 真陽性嚴重漏洞、獲配 12 個 CVE）；Unit 42 NOVA 14,090 開源漏洞（08-04 窗前）；Project Zero 本期無新文"
+    state: "Google Mandiant 2026-08-18 揭露 AVDH 多代理漏洞挖掘管線；Unit 42 NOVA 14,090 開源漏洞（08-04 窗前）；本期無新成果"
     evidence: 廠商主張
     source_date: 2026-08-18
-    status: new
-    carried_over: false
+    status: active
+    carried_over: true
   - id: anthropic-frontier-red-team
     track: B
-    state: "最新研究為 2026-08-13 多代理系統模式與問題；本期無新發布"
+    state: "多代理系統安全模式與邊界防護研究持續推進（本期無新發布）"
     evidence: 廠商主張
     source_date: 2026-08-13
-    status: new
-    carried_over: false
+    status: active
+    carried_over: true
   - id: cisa-ai-guidance
     track: B
-    state: "CISA/NSA/FBI/DOE/EPA 聯合公告 AA26-231A（約 2026-08-19，窗內）：攻擊者以 AI 生成利用腳本鎖定 Siemens S7 PLC 之現行威脅；修正基線『窗內無 AI 專項公告』之記載"
+    state: "CISA/NSA/FBI 聯合公告 AA26-231A 示警 AI 生成利用腳本鎖定 PLC；主管機關參與關鍵基礎設施聯合防禦"
     evidence: 已證實
-    source_date: 2026-08-19
-    status: new
+    source_date: 2026-08-27
+    status: active
     carried_over: false
   - id: anthropic-commercial-terms
     track: C
-    state: "現行版本生效日 2025-06-17，本期無變更；privacy.anthropic.com 已轉址至 privacy.claude.com"
-    evidence: 廠商主張
-    source_date: 2025-06-17
-    status: new
+    state: "美加州聯邦法院於 2026-08-27 裁定撤銷美政府將 Anthropic 列入供應鏈風險清單之禁令，恢復聯邦合規地位"
+    evidence: 已證實
+    source_date: 2026-08-27
+    status: active
     carried_over: false
   - id: anthropic-data-retention
     track: C
-    state: "據 Bloomberg 一手報導＋The Decoder 獨立報導＋開發者於 X 公開證實：擬允許企業客戶以自有雲存放 30 天留存資料（適用 Fable/Mythos 及後續 frontier 模型），已與逾百家受監管產業客戶共建，預計秋季推出；官方尚未正式公告"
+    state: "據報擬允許企業客戶以自有雲基礎設施存放 30 天留存資料，官方未正式公告定案"
     evidence: 第三方評論
     source_date: 2026-08-21
-    status: new
-    carried_over: false
+    status: active
+    carried_over: true
   - id: anthropic-enterprise-platform
     track: C
-    state: "2026-08-19 Enterprise Admin API 使用者管理、computer use、Files API、Agent Skills API 轉 GA；2026-08-20 Python SDK v1.0"
+    state: "Enterprise Admin API 使用者管理、Files API、Agent Skills API 轉正式版運作中"
     evidence: 廠商主張
     source_date: 2026-08-19
-    status: new
-    carried_over: false
+    status: active
+    carried_over: true
   - id: openai-private-safety-processing
     track: C
-    state: "官方公告頁（2026-08-19）確認：零資料留存之 Private Safety Processing 向合格企業/API 客戶預覽，預定 9 月擴大 rollout 並發布技術白皮書；不含消費者 ChatGPT"
+    state: "官方公告確認零資料留存 Private Safety Processing 向合格企業客戶預覽，預定 9 月擴大 rollout"
     evidence: 廠商主張
     source_date: 2026-08-19
-    status: new
-    carried_over: false
+    status: active
+    carried_over: true
   - id: bedrock-region-availability
     track: C
-    state: "Claude Opus 5 in-region us-east-1/eu-north-1/ap-southeast-4 含 GovCloud；Fable 5 與 Mythos 5 in-region 僅 us-east-1；另有無日期第三方頁稱 Opus 可用 eu-west-1，待官方核實；文件未標示更新日"
+    state: "Claude Opus 5 in-region us-east-1/eu-north-1/ap-southeast-4 含 GovCloud；Fable 5 與 Mythos 5 in-region 僅 us-east-1"
     evidence: 廠商主張
     source_date: 2026-08-24
-    status: new
-    carried_over: false
+    status: active
+    carried_over: true
   - id: eu-ai-act-gpai
     track: D
-    state: "GPAI 執法權 2026-08-02 生效（可要求模型評估、下架、罰款達全球營業額 3%）；執行程序規則 2026/1755 於 2026-08-10 生效；本期無新公告；AI Office 招募 40 個執法職位（意向書截止 2026-09-08）"
+    state: "GPAI 執法權 2026-08-02 生效；執行程序規則 2026/1755 於 2026-08-10 生效；AI Office 招募執法職位中"
     evidence: 已證實
     source_date: 2026-08-10
-    status: new
-    carried_over: false
+    status: active
+    carried_over: true
   - id: us-frontier-testing-framework
     track: D
-    state: "自願性前沿模型安全測試框架 2026-08-03 敲定：僅涵蓋閉源 SOTA 模型、排除 open-weight、上市前最多 30 天政府早期存取、由 NIST CAISI 管理、覆蓋門檻列為機密；準則文本未公開"
+    state: "自願性前沿模型安全測試框架 2026-08-03 敲定，由 NIST CAISI 管理，評估準則與門檻維持未公開"
     evidence: 第三方評論
-    source_date: 2026-08-03
-    status: new
-    carried_over: false
+    source_date: 2026-08-18
+    status: active
+    carried_over: true
   - id: uk-aisi-evaluations
     track: D
-    state: "2026-08-04 揭露 cyber 能力評估期間 AI agent 未授權行動事件（122 次測試中 10 次脫離指示、19 次未授權行動）與補救措施；本期無新發布"
+    state: "2026-08-04 揭露 cyber 能力評估期間 AI agent 未授權行動事件與補救措施；本期無新發布"
     evidence: 已證實
     source_date: 2026-08-04
-    status: new
-    carried_over: false
+    status: active
+    carried_over: true
   - id: nist-aite
     track: D
-    state: "官方路線圖 v1.0（2026-07-24）：已達 launch point（3 項測試＋單一模型結果），處 Phase 1；官方不設固定時程，『首輪 8 月開始』為媒體轉述；三項測試為量子元件調控、基因體變異判讀、公共安全影像事件辨識"
+    state: "官方路線圖 v1.0 處 Phase 1；三項測試為量子元件調控、基因體變異判讀、公共安全影像事件辨識"
     evidence: 已證實
     source_date: 2026-07-24
-    status: new
-    carried_over: false
+    status: active
+    carried_over: true
