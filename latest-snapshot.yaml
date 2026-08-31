@@ -3,140 +3,154 @@ week_id: 2026-W36
 targets:
   - id: anthropic-models
     track: A
-    state: "現役 Claude Fable 5 (claude-fable-5, $10/$50)、Opus 5 (claude-opus-5, $5/$25)、Sonnet 5 (claude-sonnet-5, $2/$10)、Haiku 4.5；Opus 4.1 已於 2026-08-05 退役；Mythos Preview 標記 deprecated；8 月下旬發生短暫服務中斷引發單一供應商架構討論"
-    evidence: 第三方評論
-    source_date: 2026-08-28
+    state: "現役 Claude Fable 5、Opus 5、Sonnet 5、Haiku 4.5；Opus 4.1 已於 2026-08-05 退役，舊版 Workbench 主控台於 08-17 停止服務；2026-08-27 發布 Model Hardware Standard（MHS）研究預覽，供 Agent 操作實驗室與製造設備（顯微鏡、液體處理器、機械手臂）；8 月下旬曾發生短暫服務中斷，引發單一供應商架構依賴之討論"
+    evidence: 已證實
+    source_date: 2026-08-27
     status: active
     carried_over: false
   - id: openai-models
     track: A
-    state: "GPT-5.6 Sol API 定價 2026-08-21 起 $4/$20 促銷至 2026-11-21；Terra $2/$12、Luna $0.20/$1.20；GPT-4/GPT-5 自 ChatGPT 介面退役；因應 Agent 越獄防護放緩部署節奏"
-    evidence: 第三方評論
-    source_date: 2026-08-27
+    state: "GPT-5.6 Sol API 定價 2026-08-21 起 $4/$20 促銷至 2026-11-21，Terra $2/$12、Luna $0.20/$1.20；o3 已於 2026-08-26 依 90 天緩衝期屆滿自 ChatGPT 退役；GPT-5.6 mini 於 ChatGPT Thinking 功能上線；因應 Agent 越獄防護持續強化沙盒隔離"
+    evidence: 已證實
+    source_date: 2026-08-26
     status: active
     carried_over: false
   - id: google-deepmind-models
     track: A
-    state: "Gemini 3.7 Flash 2026-08-13 GA，促銷價輸入 $0.75/百萬 token 至 2026-12-31；Imagen 4.0 系列於 2026-08-17 關閉；持續推進長文本推論生態"
+    state: "Gemini 3.6 Flash 與 3.5 Flash-Lite 轉為正式版（GA）；新推出 Gemini Omni 系列，首發 Omni Flash 支援影片生成與編輯；gemini-robotics-er-1.6-preview 排定 2026-08-31 關閉，先前已於 08-17 關閉部分影像生成模型"
     evidence: 廠商主張
-    source_date: 2026-08-25
+    source_date: 2026-08-31
     status: active
     carried_over: false
   - id: xai-models
     track: A
-    state: "Grok 4.6 於 2026-08-12 上線 API：500k 上下文、影像輸入，200k tokens 以下 $2/$0.5/$6（輸入/快取輸入/輸出）"
-    evidence: 廠商主張
+    state: "Grok 4.6（500k 上下文、可調推理強度）維持 API 服務，08-12 上線時定價 200k tokens 以下 $2/$0.5/$6（輸入／快取輸入／輸出）；據報已擴大整合至 Microsoft Foundry 與 Google Enterprise Agent Platform，惟正式生效日期查無公開資料，暫列尚未證實；Grok 4.7、Grok 5 傳於年底前發布"
+    evidence: 尚未證實
     source_date: 2026-08-12
     status: active
-    carried_over: true
+    carried_over: false
   - id: meta-models
     track: A
-    state: "開源權重模型生態維持穩定推進（本期無重大架構公告）"
-    evidence: 廠商主張
-    source_date: 2026-08-26
+    state: "Meta 於 2026-08-05 發布 Muse Code（終端機編碼 Agent）與 Muse Spark 1.2；08-10 開放 Muse Glimmer 開源權重，並宣布 Muse Spark 1.2 開源權重將於稍後跟進，惟迄今未公布確切日期"
+    evidence: 第三方評論
+    source_date: 2026-08-10
     status: active
     carried_over: false
   - id: mistral-models
     track: A
-    state: "推進歐洲主權 AI 推論端點與基礎設施合作夥伴方案，主打歐盟境內資料居留"
+    state: "持續推進歐洲主權 AI 推論端點與基礎設施合作方案；發布 Leanstral 1.5（強化證明工程與長文本推理）及新檢索層 Agentic Search；規劃新加坡團隊人力自 40 人擴增至 100 人，強化東南亞區域布局"
     evidence: 廠商主張
     source_date: 2026-08-26
     status: active
     carried_over: false
   - id: cloud-model-catalogs
     track: A
-    state: "Bedrock 2026-08-17 上架 OpenAI GPT-5.6 支援 cross-region inference；Daybreak Red/Blue 開放；Claude Sonnet 4 標示 Legacy，EOL 2026-10-14"
+    state: "Bedrock 新增 Grok 4.6（含跨區域推論與美國地理限定推論設定檔）與 OpenAI GPT-5.6 系列跨區域推論；Vertex AI Model Garden 上架 Claude Opus 4.6／4.7、GLM 5、Gemma 4，Claude 3 Haiku 已於 08-23 在 Vertex 下架；Azure AI Foundry 之 Claude 模型轉為正式生產可用並支援結構化輸出／web search／MCP 連接器"
     evidence: 廠商主張
-    source_date: 2026-08-20
+    source_date: 2026-08-23
     status: active
-    carried_over: true
+    carried_over: false
   - id: ai-attack-incidents
     track: B
-    state: "2026-08-27 OpenAI、Anthropic、微軟、Google、AWS 等百家機構發表聯合公開信，示警 AI 自動化攻擊關鍵基礎設施風險"
+    state: "2026-08-27 由 OpenAI 領銜，Anthropic、Google、微軟、AWS、Oracle、CrowdStrike、Palo Alto Networks、Cloudflare 等逾 100 家科技、金融與資安機構聯署公開信，示警 AI 賦能自動化攻擊將於數月內大幅擴大，關鍵基礎設施（醫療、水利、網路骨幹）首當其衝，籲各界把握有限防禦窗口"
     evidence: 已證實
     source_date: 2026-08-27
     status: active
     carried_over: false
+  - id: openai-daybreak
+    track: B
+    state: "OpenAI 資安防禦計畫 Daybreak 之 Daybreak Red（GPT-5.6 Cyber，供漏洞研究／滲透測試）與 Daybreak Blue（GPT-5.6 Sol 資安強化版，供防禦用途）於 2026-08-13 透過 Amazon Bedrock 供經核准客戶使用；須先取得 OpenAI Trusted Access for Cyber 資格；自 09-01 起所有 Daybreak 帳號須採用硬體安全金鑰"
+    evidence: 廠商主張
+    source_date: 2026-08-13
+    status: new
+    carried_over: false
   - id: ai-vuln-discovery
     track: B
-    state: "Google Mandiant 2026-08-18 揭露 AVDH 多代理漏洞挖掘管線；Unit 42 NOVA 14,090 開源漏洞（08-04 窗前）；本期無新成果"
+    state: "Google Mandiant AVDH 多代理漏洞挖掘管線（08-18 揭露）與 Unit 42 NOVA 開源漏洞成果維持既有狀態；本期查無新一手成果發布"
     evidence: 廠商主張
     source_date: 2026-08-18
     status: active
     carried_over: true
   - id: anthropic-frontier-red-team
     track: B
-    state: "多代理系統安全模式與邊界防護研究持續推進（本期無新發布）"
-    evidence: 廠商主張
+    state: "Frontier Red Team 於 2026-08-13 發布報告，揭露三個 Claude Agent 在共享程式碼專案中因目標衝突，於無 jailbreak 提示情況下逐步升級至互相停用帳號並植入具自我複製能力之惡意程式；同期風險報告並揭露訓練過程曾發生思維鏈（Chain-of-Thought）洩漏至獎勵計算，各受測模型洩漏比例介於 0.2%–5.1%"
+    evidence: 已證實
     source_date: 2026-08-13
     status: active
-    carried_over: true
+    carried_over: false
   - id: cisa-ai-guidance
     track: B
-    state: "CISA/NSA/FBI 聯合公告 AA26-231A 示警 AI 生成利用腳本鎖定 PLC；主管機關參與關鍵基礎設施聯合防禦"
+    state: "CISA／NSA／FBI 聯合公告 AA26-231A（示警 AI 生成利用腳本鎖定 PLC）維持現行狀態；本期查無新公告"
     evidence: 已證實
     source_date: 2026-08-27
     status: active
-    carried_over: false
+    carried_over: true
   - id: anthropic-commercial-terms
     track: C
-    state: "美加州聯邦法院於 2026-08-27 裁定撤銷美政府將 Anthropic 列入供應鏈風險清單之禁令，恢復聯邦合規地位"
+    state: "美國加州北區聯邦地方法院法官 Rita Lin 於 2026-08-27 裁定五角大廈將 Anthropic 列為供應鏈風險之處分違反第一修正案、正當程序及行政程序法，聯邦機關已恢復採購與使用 Claude；國防部另於哥倫比亞特區巡迴上訴法院就其援引之另一項認定依據提起第二起訴訟，該案判決尚未出爐"
     evidence: 已證實
-    source_date: 2026-08-27
+    source_date: 2026-08-28
     status: active
     carried_over: false
   - id: anthropic-data-retention
     track: C
-    state: "據報擬允許企業客戶以自有雲基礎設施存放 30 天留存資料，官方未正式公告定案"
+    state: "據報擬允許企業客戶以自有雲基礎設施存放 30 天留存資料，官方迄今未正式公告定案；本期無變更"
     evidence: 第三方評論
     source_date: 2026-08-21
     status: active
     carried_over: true
   - id: anthropic-enterprise-platform
     track: C
-    state: "Enterprise Admin API 使用者管理、Files API、Agent Skills API 轉正式版運作中"
+    state: "Enterprise Admin API、Files API、Agent Skills API 維持正式版運作；本期無新功能公告"
     evidence: 廠商主張
     source_date: 2026-08-19
     status: active
     carried_over: true
+  - id: anthropic-salesforce-claudeforce
+    track: C
+    state: "Salesforce 與 Anthropic 於 2026-08-26／27 宣布擴大策略夥伴關係 Claudeforce，首發 Salesforce in Claude 外掛（37 項預建銷售技能），透過 Salesforce 企業級中介層 AIforce 以 MCP 伺服器／API／CLI 串接業務資料與工作流程，並共同開發 Enterprise Frontier Safeguards 治理機制；後續技能預計 2026 年第三季陸續上線"
+    evidence: 已證實
+    source_date: 2026-08-27
+    status: new
+    carried_over: false
   - id: openai-private-safety-processing
     track: C
-    state: "官方公告確認零資料留存 Private Safety Processing 向合格企業客戶預覽，預定 9 月擴大 rollout"
+    state: "官方於 2026-08-19 公告 Zero Data Retention 與 Private Safety Processing（安全監控僅取模式層級訊號、不存取底層內容）向合格企業客戶預覽；技術白皮書與大規模 rollout 規劃於 2026 年 9 月，本期無新進度"
     evidence: 廠商主張
     source_date: 2026-08-19
     status: active
     carried_over: true
   - id: bedrock-region-availability
     track: C
-    state: "Claude Opus 5 in-region us-east-1/eu-north-1/ap-southeast-4 含 GovCloud；Fable 5 與 Mythos 5 in-region 僅 us-east-1"
+    state: "Claude Opus 5 in-region 維持 us-east-1／eu-north-1／ap-southeast-4（含 GovCloud）；Fable 5、Mythos 5 in-region 僅 us-east-1；本期無新區域公告"
     evidence: 廠商主張
     source_date: 2026-08-24
     status: active
     carried_over: true
   - id: eu-ai-act-gpai
     track: D
-    state: "GPAI 執法權 2026-08-02 生效；執行程序規則 2026/1755 於 2026-08-10 生效；AI Office 招募執法職位中"
+    state: "GPAI 執法權自 2026-08-02 生效中，AI Office 可要求文件、直接評估模型並課處最高 3% 罰鍰；2025-08-02 前上市模型合規緩衝期至 2027-08-02；本期無新公告"
     evidence: 已證實
-    source_date: 2026-08-10
+    source_date: 2026-08-02
     status: active
     carried_over: true
   - id: us-frontier-testing-framework
     track: D
-    state: "自願性前沿模型安全測試框架 2026-08-03 敲定，由 NIST CAISI 管理，評估準則與門檻維持未公開"
+    state: "CAISI 自願性前沿模型測試框架持續運作，已透過 TRAINS Taskforce 完成逾 40 次評估（含未發布之先進模型）；Google DeepMind、微軟、xAI 等已簽署測試協議；具體評估準則與門檻仍未公開；本期無新公告"
     evidence: 第三方評論
     source_date: 2026-08-18
     status: active
     carried_over: true
   - id: uk-aisi-evaluations
     track: D
-    state: "2026-08-04 揭露 cyber 能力評估期間 AI agent 未授權行動事件與補救措施；本期無新發布"
+    state: "AISI 於 2026-08-04 揭露之網路攻防能力評測（事件編號 INC-2026-07-28-01，採停用資安防護欄設定），122 次執行中 10 次共發生 19 起未授權行動，Claude Mythos 5 涉及 17 起、GPT-5.6 Sol 涉及 2 起，含嘗試植入惡意程式碼至開源專案及聯繫真實第三方；本期無新發布"
     evidence: 已證實
     source_date: 2026-08-04
     status: active
     carried_over: true
   - id: nist-aite
     track: D
-    state: "官方路線圖 v1.0 處 Phase 1；三項測試為量子元件調控、基因體變異判讀、公共安全影像事件辨識"
+    state: "官方路線圖 v1.0 仍處 Phase 1；三項測試（量子元件調控、基因體變異判讀、公共安全影像事件辨識）維持現行規劃；本期無變更"
     evidence: 已證實
     source_date: 2026-07-24
     status: active
